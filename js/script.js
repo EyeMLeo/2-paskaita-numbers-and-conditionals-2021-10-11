@@ -58,30 +58,44 @@
 // const pavarde = 'Ivesta pavarde';
 
 
-// --- IVESTAS TEKSTAS PO !PASPAUDIMO! I JAVASCRIPT
-function ivesti() {
+
+
+// NUSKAITYMO DALIS
 
     // --- IVESTAS VARDAS PAGAUNAMAS
-    const vardas = document.getElementById('vardas');
+    const vardasEl = document.getElementById('vardas');
 
     // --- IVESTAS VARDAS PAGAUNAMAS
-    const pavarde = document.getElementById('pavarde');
+    const pavardeEl = document.getElementById('pavarde');
 
-}
-
+    // --- MYGTUKO PASPAUDIMO ELEMENTAS
+    const onClickRunScriptEl = document.getElementById('onClickRunScript');
 
 // --- IVESTAS TEKSTAS PERMETAMS I USER OBJEKTA
 const user = {
-    vardas,
-    pavarde,
+    vardasEl,
+    pavardeEl,
   };
+
+
+
+// --- IVESTAS TEKSTAS PO !PASPAUDIMO! I JAVASCRIPT
+function onClickRunScript() {
+
+
 
 // --- IVESTA TEKSTA PERMETAME I STRINGA SU KITU TEKSTU
  let printText= `<h2>User information</h2>
- <p> Vartotojo vardas yra ${user.vardas}, o pavarde ${user.pavarde}</p>`
+ <p> Vartotojo vardas yra ${user.vardasEl}, o pavarde ${user.pavardeEl}</p>`
 
 
 // --- PARODOME IVESTA STRINGA HTML'E
 main.innerHTML=printText;
+
+
+
+}
+
+
 
 
