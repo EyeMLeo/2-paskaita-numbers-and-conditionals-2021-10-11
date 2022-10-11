@@ -32,3 +32,6 @@ console.log('sqrted', sqrted);
 // pakelti 5, 7 laipsniu
 let num5T7 = 5**7;
 console.log('5T7', num5T7);
+
+let kaina = 45.6.toFixed(2);
+console.log('kaina', kaina);
