@@ -61,27 +61,29 @@ console.log('FILE age.js');
 let loginName = prompt("Iveskite varda")
 let loginPassword = prompt("Iveskite slaptazodi")
 
-if (loginName==="admin") {
-    if (loginPassword==="master") {
-        alert(`Sveiki ${loginName}`);        
-    }else{
-        alert(`Neteisingas slaptažodis`);     
-    }
+// if (loginName==="admin") {
+//     if (loginPassword==="master") {
+//         alert(`Sveiki ${loginName}`);        
+//     }else{
+//         alert(`Neteisingas slaptažodis`);     
+//     }
+// } else {
 
-    
-} else {
-
-    if (loginPassword===`${loginName}11`) {
-        alert(`Sveiki ${loginName}`);        
-    }else{
-        alert(`Neteisingas slaptažodis`);     
-    }
-
+//     if (loginPassword===`${loginName}11`) {
+//         alert(`Sveiki ${loginName}`);        
+//     }else{
+//         alert(`Neteisingas slaptažodis`);     
+//     }
+// }
 
 
+// VERSION 2
+
+if ((loginName==="admin"&&loginPassword==="master")||loginPassword===`${loginName}11`) {
+    alert(`Sveiki ${loginName}`); 
+}else{
+    alert(`Neteisingas slaptažodis`);     
 }
-
-
 
 
 
